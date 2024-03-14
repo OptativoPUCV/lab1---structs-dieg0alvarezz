@@ -224,3 +224,9 @@ exercises.c:54:17: error: ‘newArr’ is used uninitialized [-Werror=uninitiali
 cc1: all warnings being treated as errors
 Compilation failed
 c8a5db3
+Thu 14 Mar 2024 09:24:07 PM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ tests:  0|5
+total_score: 20/70
+064078e
