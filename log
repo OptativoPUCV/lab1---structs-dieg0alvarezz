@@ -258,3 +258,25 @@ exercises.c:82:7: error: unused variable ‘pivoteInt’ [-Werror=unused-variabl
 cc1: all warnings being treated as errors
 Compilation failed
 03d3725
+Thu 14 Mar 2024 09:29:08 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘comparar’:
+exercises.c:84:7: error: ‘ptrPivot’ undeclared (first use in this function); did you mean ‘pivot’?
+   84 |   if(*ptrPivot > *ptrItem) return 1;
+      |       ^~~~~~~~
+      |       pivot
+exercises.c:84:7: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:84:19: error: ‘ptrItem’ undeclared (first use in this function)
+   84 |   if(*ptrPivot > *ptrItem) return 1;
+      |                   ^~~~~~~
+exercises.c:83:8: error: unused variable ‘pivoteItem’ [-Werror=unused-variable]
+   83 |   int *pivoteItem = (int*) item;
+      |        ^~~~~~~~~~
+exercises.c:82:8: error: unused variable ‘pivoteInt’ [-Werror=unused-variable]
+   82 |   int *pivoteInt = (int*) pivot;
+      |        ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5f97cea
