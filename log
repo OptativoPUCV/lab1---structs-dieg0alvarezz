@@ -174,3 +174,20 @@ exercises.c:54:17: error: ‘newArr’ is used uninitialized [-Werror=uninitiali
 cc1: all warnings being treated as errors
 Compilation failed
 9861184
+Thu 14 Mar 2024 09:19:58 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:79:17: error: expected expression before ‘]’ token
+   79 |   return result[];
+      |                 ^
+exercises.c:79:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   79 |   return result[];
+      |          ^~~~~~
+exercises.c:78:6: note: declared here
+   78 | void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[]) {
+      |      ^~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+8f0dbf4
