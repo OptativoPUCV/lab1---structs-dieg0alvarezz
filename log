@@ -191,3 +191,14 @@ exercises.c:78:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 8f0dbf4
+Thu 14 Mar 2024 09:22:40 PM UTC: 
+ exercises.c | 12 +++++++++++-
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:84:19: error: ‘i’ undeclared (first use in this function)
+   84 |   for (int k = 0; i > size2; k++)
+      |                   ^
+exercises.c:84:19: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+ff14100
