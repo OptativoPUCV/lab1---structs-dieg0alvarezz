@@ -74,3 +74,14 @@ exercises.c:61:7: error: value computed is not used [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 76dcd35
+Thu 14 Mar 2024 09:01:41 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:62:7: error: value computed is not used [-Werror=unused-value]
+   62 |       *newSize++;
+      |       ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3a856b6
