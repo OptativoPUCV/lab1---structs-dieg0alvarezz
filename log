@@ -213,3 +213,14 @@ exercises.c:84:19: error: ‘i’ undeclared (first use in this function)
 exercises.c:84:19: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 774a2ad
+Thu 14 Mar 2024 09:22:59 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+test.c: In function ‘filterEvenNumbers’:
+exercises.c:54:17: error: ‘newArr’ is used uninitialized [-Werror=uninitialized]
+   54 |   int *newArr = realloc(newArr, (*newSize + 1) * sizeof(int));
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c8a5db3
