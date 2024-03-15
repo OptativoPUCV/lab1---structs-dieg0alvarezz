@@ -51,7 +51,7 @@ newsize apunta a una dirección válida que no ha sido inicializada con nigún v
 */
 
 int *filterEvenNumbers(int arr[], int size, int *newSize) {
-/*
+/
   int *newArr = realloc(newArr, (*newSize + 1) * sizeof(int));
   int posActual = 0;
   
@@ -65,7 +65,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
 
   }
   return newArr;
-  */
+  
   return NULL;
   }
 
