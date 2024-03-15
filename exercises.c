@@ -49,22 +49,27 @@ newsize apunta a una dirección válida que no ha sido inicializada con nigún v
 
 
 */
+
+
 #include <stdlib.h>
+
 int *filterEvenNumbers(int arr[], int size, int *newSize) {
-  int *newArr = NULL; // Inicializamos el nuevo arreglo como NULL
-  *newSize = 0; // Inicializamos el tamaño del nuevo arreglo como 0
+    int *newArr = NULL;
+    *newSize = 0;
 
-  for (int i = 0; i < size; i++) {
-      if (arr[i] % 2 == 0) {
-          // Si el número es par, realocamos memoria para el nuevo arreglo
-          newArr = realloc(newArr, (*newSize + 1) * sizeof(int));
-          newArr[*newSize] = arr[i]; // Añadimos el número par al nuevo arreglo
-          (*newSize)++; // Incrementamos el tamaño del nuevo arreglo
-      }
-  }
+    for (int i = 0; i < size; i++) {
+        if (arr[i] % 2 == 0) {
+            // Reasignamos newArr con el tamaño actualizado
+            newArr = realloc(newArr, (*newSize + 1) * sizeof(int));
+            newArr[*newSize] = arr[i];
+            (*newSize)++; // Incrementamos el tamaño del nuevo arreglo
+        }
+    }
 
-  return newArr;
-  }
+    return newArr;
+}
+
+
 
 
 /*
