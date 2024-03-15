@@ -60,7 +60,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
 
     for (int i = 0; i < size; i++) {
         if (arr[i] % 2 == 0) {
-            // Reasignamos newArr con el tamaño actualizado
+            
             newArr = realloc(newArr, (*newSize + 1) * sizeof(int));
             newArr[*newSize] = arr[i];
             (*newSize)++; // Incrementamos el tamaño del nuevo arreglo
