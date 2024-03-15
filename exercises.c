@@ -49,7 +49,7 @@ newsize apunta a una dirección válida que no ha sido inicializada con nigún v
 
 
 */
-
+#include <stdlib.h>
 int *filterEvenNumbers(int arr[], int size, int *newSize) {
   int *newArr = NULL; // Inicializamos el nuevo arreglo como NULL
   *newSize = 0; // Inicializamos el tamaño del nuevo arreglo como 0
