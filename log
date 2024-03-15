@@ -318,3 +318,21 @@ exercises.c:62:7: error: ‘newArr’ undeclared (first use in this function)
 exercises.c:62:7: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 49df834
+Fri 15 Mar 2024 10:30:55 PM UTC: 
+ exercises.c | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:54:1: error: expected expression before ‘/’ token
+   54 | /
+      | ^
+exercises.c:63:8: error: ‘newArr’ undeclared (first use in this function)
+   63 |       *newArr = realloc(newArr, (*newSize + 1) * sizeof(int));
+      |        ^~~~~~
+exercises.c:63:8: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:72:3: error: control reaches end of non-void function [-Werror=return-type]
+   72 |   }
+      |   ^
+cc1: all warnings being treated as errors
+Compilation failed
+a0b1cdc
