@@ -304,3 +304,17 @@ exercises.c:56:7: error: variable ‘posActual’ set but not used [-Werror=unus
 cc1: all warnings being treated as errors
 Compilation failed
 59a31c0
+Fri 15 Mar 2024 10:28:32 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:54:1: error: expected expression before ‘/’ token
+   54 | /
+      | ^
+exercises.c:62:7: error: ‘newArr’ undeclared (first use in this function)
+   62 |       newArr[newSize] = arr[i];
+      |       ^~~~~~
+exercises.c:62:7: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+49df834
