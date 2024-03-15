@@ -336,3 +336,14 @@ exercises.c:72:3: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 a0b1cdc
+Fri 15 Mar 2024 10:31:09 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:63:15: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   63 |       *newArr = realloc(newArr, (*newSize + 1) * sizeof(int));
+      |               ^
+cc1: all warnings being treated as errors
+Compilation failed
+cf5963d
