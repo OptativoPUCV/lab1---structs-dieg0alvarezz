@@ -671,3 +671,14 @@ exercises.c:219:9: error: unused variable ‘actual’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 26c0aaa
+Sat 16 Mar 2024 04:17:52 PM UTC: 
+ exercises.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:221:14: error: ‘nuevo’ undeclared (first use in this function)
+  221 |     inicio = nuevo;
+      |              ^~~~~
+exercises.c:221:14: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+2ff2cee
