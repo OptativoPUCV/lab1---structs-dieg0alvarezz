@@ -639,3 +639,9 @@ exercises.c:186:15: error: ‘Autor’ has no member named ‘anioPublicacion’
       |               ^
 Compilation failed
 ef912fc
+Sat 16 Mar 2024 02:47:11 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|1
+total_score: 60/70
+cfe54aa
