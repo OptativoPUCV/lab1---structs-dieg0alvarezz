@@ -693,3 +693,9 @@ exercises.c:220:7: error: ‘nuevo’ undeclared (first use in this function)
 exercises.c:220:7: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 bc1d22a
+Sat 16 Mar 2024 04:19:08 PM UTC: 
+ exercises.c | 18 +++++++-----------
+ 1 file changed, 7 insertions(+), 11 deletions(-)
+ tests:  0|0
+total_score: 70/70
+8a2548a
