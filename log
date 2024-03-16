@@ -539,3 +539,15 @@ Sat 16 Mar 2024 12:06:04 AM UTC:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 88ae8c1
+Sat 16 Mar 2024 12:06:17 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:64:52: error: invalid operands to binary * (have ‘int *’ and ‘long unsigned int’)
+   64 |             newArr = realloc(newArr, (newSize + 1) * sizeof(int));
+      |                                      ~~~~~~~~~~~~~ ^
+      |                                               |
+      |                                               int *
+Compilation failed
+d971bf8
