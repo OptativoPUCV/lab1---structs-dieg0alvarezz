@@ -580,3 +580,16 @@ exercises.c:57:50: note: previous definition of ‘newSize’ with type ‘int *
       |                                             ~~~~~^~~~~~~
 Compilation failed
 321702e
+Sat 16 Mar 2024 12:06:58 AM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:59:10: error: ‘newSize’ redeclared as different kind of symbol
+   59 |     int *newSize = 0;
+      |          ^~~~~~~
+exercises.c:57:50: note: previous definition of ‘newSize’ with type ‘int *’
+   57 | int *filterEvenNumbers(int arr[], int size, int *newSize) {
+      |                                             ~~~~~^~~~~~~
+Compilation failed
+1c48911
