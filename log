@@ -567,3 +567,16 @@ exercises.c:65:20: error: invalid type argument of unary ‘*’ (have ‘int’
       |                    ^~~~~~~~
 Compilation failed
 d0443de
+Sat 16 Mar 2024 12:06:43 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:59:9: error: ‘newSize’ redeclared as different kind of symbol
+   59 |     int newSize = 0;
+      |         ^~~~~~~
+exercises.c:57:50: note: previous definition of ‘newSize’ with type ‘int *’
+   57 | int *filterEvenNumbers(int arr[], int size, int *newSize) {
+      |                                             ~~~~~^~~~~~~
+Compilation failed
+321702e
