@@ -217,8 +217,14 @@ Nodo *crearNodo(int valor) {
 Nodo *crearListaEnlazada(int arr[], int size) {
   Nodo *inicio = NULL; 
   Nodo *actual = NULL;
-  if (inicio == NULL){
-    inicio = nuevo;
+  if (nuevo == NULL) {
+ 
+      while (inicio != NULL) {
+          Nodo *temp = inicio->siguiente;
+          free(inicio);
+          inicio = temp;
+      }
+      return NULL; 
   }
   else {
     

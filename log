@@ -682,3 +682,14 @@ exercises.c:221:14: error: ‘nuevo’ undeclared (first use in this function)
 exercises.c:221:14: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 2ff2cee
+Sat 16 Mar 2024 04:18:28 PM UTC: 
+ exercises.c | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:220:7: error: ‘nuevo’ undeclared (first use in this function)
+  220 |   if (nuevo == NULL) {
+      |       ^~~~~
+exercises.c:220:7: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+bc1d22a
