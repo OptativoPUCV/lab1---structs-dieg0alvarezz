@@ -629,3 +629,13 @@ Sat 16 Mar 2024 12:31:49 AM UTC:
  tests:  0|2
 total_score: 50/70
 e95330c
+Sat 16 Mar 2024 02:46:56 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:186:15: error: ‘Autor’ has no member named ‘anioPublicacion’
+  186 |   libro->autor.anioPublicacion = anioPublicacion;
+      |               ^
+Compilation failed
+ef912fc
