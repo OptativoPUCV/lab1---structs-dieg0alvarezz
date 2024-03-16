@@ -215,7 +215,12 @@ Nodo *crearNodo(int valor) {
 }
 
 Nodo *crearListaEnlazada(int arr[], int size) {
-   
-  return NULL; 
+  Nodo *inicio = NULL; 
+  Nodo *actual = NULL;
+  for (int i = 0; i < size; i++) {
+    Nodo *nuevo = crearNodo(arr[i]); 
+  }
+  
+  return inicio; 
        
 }
